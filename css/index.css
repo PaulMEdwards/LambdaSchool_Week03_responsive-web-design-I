@@ -256,6 +256,10 @@ nav .menu-text {
   width: 69%;
 }
 
+.image-top {
+  margin-top: 1em;
+}
+
 section {
 	margin: 2em 0;
 }
@@ -292,11 +296,26 @@ section a:last-child div p {
 	justify-content: space-between;
 }
 
+.content-middle {
+	display: flex;
+	flex-wrap: wrap;
+  /* flex-direction: row; */
+  justify-content: space-between;
+}
+
 .content-bottom {
 	display: flex;
 	flex-wrap: nowrap;
   flex-direction: row;
 	justify-content: space-between;
+}
+.content-bottom-services {
+	display: flex;
+	flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .desktop-only {
@@ -442,8 +461,24 @@ section a:last-child div p {
   .content-top {
     flex-wrap: wrap;
   }
+  .content-middle {
+    flex-direction: column;
+  }
   .content-bottom {
     flex-wrap: wrap;
+  }
+  .content-bottom-alt {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .learn {
+    min-width: 65px;
+    max-width: 50%;
+    padding: 10px;
+    text-align: center;
   }
 
   .t-margin-2_5 {
