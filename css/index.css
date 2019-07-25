@@ -137,7 +137,8 @@ button {
 	font-size: 1.1em;
 	background-color: white;
 	cursor: pointer;
-	font-family: 'Carter One', cursive;
+  font-family: 'Carter One', cursive;
+  margin: 0 auto;
 }
 .learn {
   display: inline-block;
@@ -218,12 +219,10 @@ div {
 /* Desktop */
 body {
   max-width: 1024px;
+  margin: 0 auto;
 }
 .inner-body {
 	margin: 0 4em;
-}
-section {
-	margin: 2em 0;
 }
 
 header iframe {
@@ -257,6 +256,49 @@ nav .menu-text {
   width: 69%;
 }
 
+section {
+	margin: 2em 0;
+}
+section a div p {
+  margin-right: 0.75em;
+}
+section a:last-child div p {
+  margin-right: 0;
+}
+
+.content-innovation {
+	display: flex;
+	flex-wrap: nowrap;
+  flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	align-content: space-around;
+	text-align: center;
+	margin: 3em 0;
+	margin-bottom: 5em;
+}
+.content-innovation div {
+	width: 100%;
+	margin-top: 2.5em;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+.content-top {
+	display: flex;
+	flex-wrap: nowrap;
+  flex-direction: row;
+	justify-content: space-between;
+}
+
+.content-bottom {
+	display: flex;
+	flex-wrap: nowrap;
+  flex-direction: row;
+	justify-content: space-between;
+}
+
 .desktop-only {
   display: inline-block;
 }
@@ -265,12 +307,10 @@ nav .menu-text {
 @media(max-width: 800px) {
   body {
     max-width: 800px;
+    margin: 0 auto;
   }
   .inner-body {
     margin: 0 1.15em;
-  }
-  section {
-    margin: 2em 0;
   }
 
   header iframe {
@@ -282,10 +322,6 @@ nav .menu-text {
     padding: 0;
     border: 0;
     height: 7em;
-  }
-
-  .t-margin-2_5 {
-    margin-top: 0em;
   }
 
   nav {
@@ -314,6 +350,24 @@ nav .menu-text {
     margin: 2em 0;
   }
 
+  section {
+    margin: 2em 0;
+  }
+
+  .content-innovation div {
+    margin-top: 0;
+  }
+  section.content-top a div p {
+    margin-right: 0.65em;
+  }
+  section.content-bottom a div p {
+    margin-right: 1.7em;
+  }
+
+  .t-margin-2_5 {
+    margin-top: 0em;
+  }
+
   .desktop-only {
     display: none;
   }
@@ -327,9 +381,6 @@ nav .menu-text {
   .inner-body {
     margin: 0 1.15em;
   }
-  section {
-    margin: 2em 0;
-  }
 
   header iframe {
     height: 24em;
@@ -340,16 +391,6 @@ nav .menu-text {
     padding: 0;
     border: 0;
     height: 24em;
-  }
-
-  .t-margin-2_5 {
-    margin-top: 0em;
-  }
-  .b-margin-5 {
-    margin-bottom: 4em;
-  }
-  .v-margin-3 {
-    margin: 1em 0;
   }
 
   nav {
@@ -385,6 +426,34 @@ nav .menu-text {
   }
   nav .menu-image {
     margin-bottom: 0.75em;
+  }
+  
+  section {
+    margin: 2em 0;
+  }
+  section a {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  section a:last-child {
+    margin-bottom: 0;
+  }
+
+  .content-top {
+    flex-wrap: wrap;
+  }
+  .content-bottom {
+    flex-wrap: wrap;
+  }
+
+  .t-margin-2_5 {
+    margin-top: 0em;
+  }
+  .b-margin-5 {
+    margin-bottom: 4em;
+  }
+  .v-margin-3 {
+    margin: 1em 0;
   }
 
   .desktop-only {
