@@ -309,7 +309,7 @@ section a:last-child div p {
   flex-direction: row;
 	justify-content: space-between;
 }
-.content-bottom-services {
+.content-bottom-alt {
 	display: flex;
 	flex-wrap: nowrap;
   flex-direction: row;
