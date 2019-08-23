@@ -32,4 +32,4 @@ Follow these steps for completing your project.
 
 # Live Site:
 ### _(viewable after merge to master)_
-https://paulmedwards.github.io/LambdaSchool_responsive-web-design-I/
+https://paulmedwards.github.io/LambdaSchool_Week03_responsive-web-design-I/
